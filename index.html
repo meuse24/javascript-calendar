@@ -1,45 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="JavaScript Calendar - A modern, interactive calendar for managing events">
-    <title>JavaScript Calendar</title>
+    <meta name="description" content="JavaScript Kalender - Ein moderner, interaktiver Kalender zur Verwaltung von Terminen">
+    <title>JavaScript Kalender</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="app">
-        <header class="calendar-header">
-            <h1>Calendar</h1>
-        </header>
-        
         <main class="calendar-container">
             <div class="calendar-header-nav">
-                <button id="prev-month" class="nav-button" aria-label="Previous month">
+                <h1 class="calendar-title">Kalender</h1>
+                <button id="prev-month" class="nav-button" aria-label="Vorheriger Monat">
                     <span aria-hidden="true">‹</span>
                 </button>
                 <h2 id="current-month-year" class="current-month-year" aria-live="polite">
                     <!-- Month/Year will be inserted here -->
                 </h2>
-                <button id="next-month" class="nav-button" aria-label="Next month">
+                <button id="next-month" class="nav-button" aria-label="Nächster Monat">
                     <span aria-hidden="true">›</span>
+                </button>
+                <button id="today-button" class="today-button" aria-label="Springe zu heute">
+                    Heute
                 </button>
             </div>
             
-            <div class="calendar-grid" role="grid" aria-label="Calendar">
+            <div class="calendar-grid" role="grid" aria-label="Kalender">
                 <div class="calendar-days-header" role="row">
-                    <div class="day-header" role="columnheader" aria-label="Sunday">Sun</div>
-                    <div class="day-header" role="columnheader" aria-label="Monday">Mon</div>
-                    <div class="day-header" role="columnheader" aria-label="Tuesday">Tue</div>
-                    <div class="day-header" role="columnheader" aria-label="Wednesday">Wed</div>
-                    <div class="day-header" role="columnheader" aria-label="Thursday">Thu</div>
-                    <div class="day-header" role="columnheader" aria-label="Friday">Fri</div>
-                    <div class="day-header" role="columnheader" aria-label="Saturday">Sat</div>
+                    <div class="day-header" role="columnheader" aria-label="Montag">Mo</div>
+                    <div class="day-header" role="columnheader" aria-label="Dienstag">Di</div>
+                    <div class="day-header" role="columnheader" aria-label="Mittwoch">Mi</div>
+                    <div class="day-header" role="columnheader" aria-label="Donnerstag">Do</div>
+                    <div class="day-header" role="columnheader" aria-label="Freitag">Fr</div>
+                    <div class="day-header" role="columnheader" aria-label="Samstag">Sa</div>
+                    <div class="day-header" role="columnheader" aria-label="Sonntag">So</div>
                 </div>
                 <div class="calendar-dates" id="calendar-dates">
                     <!-- Calendar dates will be generated here -->
                 </div>
             </div>
+            
         </main>
         
         <!-- Modal container for event forms -->

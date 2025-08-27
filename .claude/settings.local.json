@@ -11,7 +11,10 @@
       "mcp__taskmaster-ai__set_task_status",
       "Bash(git --version)",
       "Bash(gh:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git init:*)"
     ],
     "deny": [],
     "ask": []
