@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude mcp add:*)",
+      "Bash(npm install:*)",
+      "mcp__taskmaster-ai__initialize_project",
+      "mcp__taskmaster-ai__parse_prd",
+      "mcp__taskmaster-ai__models",
+      "mcp__taskmaster-ai__get_tasks",
+      "mcp__taskmaster-ai__next_task",
+      "mcp__taskmaster-ai__set_task_status",
+      "Bash(git --version)",
+      "Bash(gh:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
